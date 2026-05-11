@@ -7,4 +7,6 @@ This repository includes a dev container for Codespaces/CDK development with:
 - Node.js 20 + AWS CDK CLI
 - AWS CLI and common command-line utilities
 
-Open in Codespaces (or VS Code Dev Containers) and run `cdk init app --language csharp`.
+Open in Codespaces (or VS Code Dev Containers), then run:
+- `cdk init app --language csharp`
+- `cdk bootstrap`
