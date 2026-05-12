@@ -1,20 +1,25 @@
 {
-  "name": "cdc-empty-csharp",
-  "image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
+  "name": "cdk-csharp-tdd",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:8.0-bookworm",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
-      "version": "20"
+      "version": "22"
     },
-    "ghcr.io/devcontainers/features/common-utils:2": {},
     "ghcr.io/devcontainers/features/aws-cli:1": {}
   },
-  "postCreateCommand": "npm install -g aws-cdk@2",
   "customizations": {
     "vscode": {
+      "settings": {
+        "dotnet.defaultSolution": "src",
+        "omnisharp.enableRoslynAnalyzers": true
+      },
       "extensions": [
         "ms-dotnettools.csharp",
-        "amazonwebservices.aws-toolkit-vscode"
+        "ms-azuretools.vscode-docker",
+        "AmazonWebServices.aws-toolkit-vscode"
       ]
     }
-  }
+  },
+  "postCreateCommand": "npm install -g aws-cdk@2",
+  "remoteUser": "vscode"
 }
