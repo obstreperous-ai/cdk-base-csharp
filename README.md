@@ -1,12 +1,14 @@
-# cdc-empty-csharp
-Template for CDK CSharp repositories.
+# Welcome to your CDK C# project!
 
-## Development container
-This repository includes a dev container for Codespaces/CDK development with:
-- .NET 8 SDK (C#)
-- Node.js 20 + AWS CDK CLI
-- AWS CLI and common command-line utilities
+This is a blank project for CDK development with C#.
 
-Open in Codespaces (or VS Code Dev Containers), then run:
-- `cdk init app --language csharp`
-- `cdk bootstrap`
+The `cdk.json` file tells the CDK Toolkit how to execute your app.
+
+It uses the [.NET CLI](https://docs.microsoft.com/dotnet/articles/core/) to compile and execute your project.
+
+## Useful commands
+
+* `dotnet build src` compile this app
+* `cdk deploy`       deploy this stack to your default AWS account/region
+* `cdk diff`         compare deployed stack with current state
+* `cdk synth`        emits the synthesized CloudFormation template
